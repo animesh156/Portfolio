@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+#home {
+  background-color: antiquewhite;
+  height: 650px;
+
+  margin-bottom: 15px;
+
+  text-align: center;
+  top: 50%;
+}
+
+#about {
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  scroll-margin-top: 80px;
+}
+
+#projects {
+  background-color: rgb(251, 254, 255);
+  height: auto;
+  margin-top: 30px;
+  scroll-margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+#contact {
+  height: auto;
+  margin-top: 50px;
+  scroll-margin-top: 70px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(241, 0, 60, 0.2),
+    0 6px 20px 0 rgba(238, 3, 23, 0.19);
+}
+
+.card:hover {
+  background-color: #000000e8;
+  color: white;
+}
+
+#ls {
+  animation-name: test;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes test {
+  0% {
+    text-shadow: 0 0 3px #ff0000;
+    color: #111111;
+  }
+
+  25% {
+    text-shadow: 0 0 3px #71e910e8;
+    color: #ff00b3;
+  }
+
+  50% {
+    text-shadow: 0 0 3px #ff00b3;
+    color: chartreuse;
+  }
+
+  75% {
+    text-shadow: 0 0 3px #fbff00;
+    color: crimson;
+  }
+
+  100% {
+    text-shadow: 0 0 3px #001aff;
+    color: deeppink;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+}
+.abt {
+  color: #ff00b3;
+  font-weight: 700;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+  color: rgb(30, 210, 39);
+}
+.card-text {
+  color: rgb(255, 11, 11);
+}
