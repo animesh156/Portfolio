@@ -49,7 +49,7 @@ function Project() {
   
   {
     filteredProjects.map((project) => (
-      <div key={project.id} className="w-72 hover:scale-105 mt-5 hover:shadow-md hover:shadow-cyan-400  h-96 m-auto mb-4  border  rounded-lg shadow bg-black border-cyan-400">
+      <div key={project.id} className="w-72 w hover:scale-105 mt-5 hover:shadow-md hover:shadow-cyan-400   m-auto mb-4  border  rounded-lg shadow bg-black border-cyan-400">
       <a href="#">
         <img className="rounded-t-lg" src={`/assets/${project.cover}`} alt={project.title} />
       </a>

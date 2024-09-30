@@ -10,9 +10,9 @@ function Home() {
     <>
       <section
        
-        className=" mt-16  w-auto md:w-auto flex justify-evenly items-center py-2 px-4  flex-wrap"
+        className="mt-12   w-auto md:w-auto flex justify-evenly items-center py-8  px-4  flex-wrap"
       >
-        <div className="flex-col justify-center text-center px-4">
+        <div className="flex-col justify-center text-center px-4 ">
           <div className="text-4xl mb-10 text-white">
             <h1 style={{ display: 'inline' }}>Hi There! <img src={hand} className="h-16 -ml-4  -mt-2" style={{ display: 'inline', verticalAlign: 'middle' }}/></h1>
             <h1 className="uppercase">I&apos;m <span className="text-rose-500">Animesh Rathore</span></h1>
@@ -44,7 +44,7 @@ function Home() {
           <div style={{ color: textColor }}>
             <button
               type="button"
-              className="mt-12 m-auto ease-in duration-300 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2"
+              className="mt-7 m-auto ease-in duration-300 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2"
             >
               <a href={animesh_resume} download="">
                 Resume
@@ -53,8 +53,8 @@ function Home() {
           </div>
         </div>
 
-        <div className="mt-8">
-          <img src={bgr} className="h-80 text-black rounded-3xl border-black"  alt="" />
+        <div className="mt-2">
+          <img src={bgr} className="h-60 text-black rounded-3xl border-black"  alt="" />
         </div>
       </section>
     </>
