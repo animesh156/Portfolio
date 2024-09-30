@@ -1,0 +1,289 @@
+
+
+.card {
+  margin-top: 15px;
+ 
+}
+
+
+
+a:focus {
+  color: orangered;
+}
+
+h2 {
+  font-family: Kalam;
+}
+
+#about {
+  margin-top: 25px;
+  height: auto;
+}
+
+.abt {
+  width: auto;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  height: auto;
+
+
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+
+  align-content: space-around;
+}
+
+.div2 {
+  word-wrap: break-word;
+}
+
+#project {
+  font-family: "Acme";
+  height: auto;
+  width: auto;
+}
+
+.project-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  justify-content: space-evenly;
+}
+
+
+h2 {
+  font-family: Honk;
+}
+
+html {
+  scroll-padding-top: 4rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+  text-align: center;
+  padding: 100px 0;
+  height: 300px;
+}
+
+#tab-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .tab-content {
+   
+    padding: 20px 0 0;
+  }
+  input {
+    display: none;
+
+    &:checked {
+      & + label {
+        color: #bd235d;
+      }
+    }
+  }
+  label {
+    display: inline-block;
+    padding: 0 25px;
+    font-weight: 600;
+    &:not(:first-of-type) {
+      border-left: 2px solid #991a48;
+      @media screen and (max-width: 480px) {
+        border-left: 2px solid #991a48;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      display: inline-block;
+    }
+    &:hover {
+      color: #bd235d;
+      cursor: pointer;
+    }
+  }
+
+  .card-body {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    .card-title {
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .card-description {
+      padding-bottom: 20px;
+    }
+    .card-link {
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      color: #bd235d;
+      display: block;
+    }
+  }
+}
+
+
+.navbar {
+ 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+  position: relative;
+}
+
+.nav-logo {
+  color: #f5b921;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-logo .icon {
+  display: inline-block;
+
+  margin-left: 16px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+ 
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+/* .fa-code {
+  margin-left: 1rem;
+} */
+
+.navbar.scrolled {
+  background-color: #ffffff; /* Background color after scrolling */
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #ffdd40;
+}
+
+.nav-item .active {
+  color: #ffdd40;
+ 
+}
+
+.nav-icon {
+  display: none;
+  color: #f5b921;
+}
+
+.nav-icon .icon {
+  display: inline-block;
+
+}
+.tst {
+  font-family: "Poppins";
+  font-weight: bolder;
+}
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #050505;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #ffdd40;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: #ffdd40;
+  }
+}
