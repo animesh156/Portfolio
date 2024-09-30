@@ -10,12 +10,12 @@ function Home() {
     <>
       <section
        
-        className="mt-12   w-auto md:w-auto flex justify-evenly items-center py-8  px-4  flex-wrap"
+        className=" w-auto md:w-auto flex justify-evenly mt-4 md:mt-6 py-1 xl:mt-28 px-4  flex-wrap"
       >
         <div className="flex-col justify-center text-center px-4 ">
-          <div className="text-4xl mb-10 text-white">
+          <div className="text-2xl md:text-6xl mb-10 text-white">
             <h1 style={{ display: 'inline' }}>Hi There! <img src={hand} className="h-16 -ml-4  -mt-2" style={{ display: 'inline', verticalAlign: 'middle' }}/></h1>
-            <h1 className="uppercase">I&apos;m <span className="text-rose-500">Animesh Rathore</span></h1>
+            <h1 className="uppercase">I&apos;m <span className="text-rose-500 font-semibold">Animesh Rathore</span></h1>
           </div>
 
           <div  style={{ color: textColor }} className="text-wrap text-2xl">
