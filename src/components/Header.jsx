@@ -11,8 +11,8 @@ function Header() {
   return (
     <>
 
-<nav className="navbar  bg-zinc-900 text-orange-500 h-14" >
-        <div className="nav-container">
+<nav className="navbar  bg-zinc-950 text-orange-500 h-12" >
+        <div className="nav-container ">
         
  
           <ul className={click ? "nav-menu active" : "nav-menu"}>

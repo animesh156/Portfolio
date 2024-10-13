@@ -2,12 +2,14 @@
 
 function About() {
   return (
-    <div >
+    <>
+   
+   
           <section
     id="about"
-    className="scroll-smooth mb-50 bg-black text-white px-6 "
+    className="scroll-smooth text-white px-6 "
   >
-    <h2 className="text-pink-400 text-5xl mt-2 mb-3 text-center">About Me</h2>
+    <h2 className="text-pink-400 text-5xl mt-6 py-5 mb-3 text-center">About Me</h2>
     <div className="cont w-auto  m-auto md:max-w-2xl  py-4   text-pretty mt-4  px-8  rounded-2xl">
       <p className="abt text-2xl text-wrap font-bold text-md">
       Hey there! I&apos;m <span className="text-red-500">Animesh Rathore</span>, a final year CSE student. I&apos;m fast learner with the passion of problem solving and MERN stack development. 
@@ -21,7 +23,7 @@ I&apos;m passionate about writing clean code & efficient code following best cod
    
     {/* Tech Stack */}
     <h2 className="text-pink-400 text-5xl mt-4 mb-5 text-center">My Tech Stack</h2>
-    <div className="flex flex-row justify-center gap-8 flex-wrap text-green-500 mt-6 stack mb-16">
+    <div className="flex flex-row justify-center gap-8 flex-wrap text-green-500 mt-6 stack py-9">
       <div className="flex flex-col border-2 border-slate-500 shadow-md hover:shadow-pink-500 w-32 h-32 rounded-lg items-center justify-center">
         <img
           width={64}
@@ -163,7 +165,8 @@ I&apos;m passionate about writing clean code & efficient code following best cod
       </div>
     </div>
   </section>
-    </div>
+    
+    </>
   )
 }
 
