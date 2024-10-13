@@ -74,7 +74,7 @@ const projects = [
     title: " Food Website",
     cover: "food.png",
     desc: "MERN  stack-based food ordering application where users can browse through a food menu, add items to their cart, and place orders. ",
-    live: "https://food-app-frontend-zeta.vercel.app/login",
+    live: "https://food-app-frontend-zeta.vercel.app/",
     code: "https://github.com/animesh156/food-app",
     type: "FullStack",
     id: 7,
