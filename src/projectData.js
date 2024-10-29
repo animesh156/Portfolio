@@ -70,6 +70,18 @@ const projects = [
     id: 6,
   },
 
+
+  {
+    title: "Weather Monitoring ",
+    cover: "weatherMonitoring.png",
+    desc: "Weather App that provides real-time weather data, alerts for temperature thresholds, and daily weather summaries for various cities.",
+    live: "https://weather-monitoring-app-flax.vercel.app/",
+    code: "https://github.com/animesh156/weather-monitoring-app",
+    type: "FullStack",
+    id: 11,
+  },
+
+
   {
     title: " Food Website",
     cover: "food.png",
@@ -89,6 +101,20 @@ const projects = [
     type: "FullStack",
     id: 8,
   },
+
+   
+  {
+    title: "Rule Engine App",
+    cover: "ruleEngine.png",
+    desc: "MERN stack based Rule Engine app allows users to dynamically create, combine, and evaluate rules using AST behind",
+    live: "https://rule-engine-livid.vercel.app/",
+    code: "https://github.com/animesh156/rule-engine",
+    type: "FullStack",
+    id: 12,
+  },
+
+
+
 
   {
     title: "Goal Setter",
@@ -111,6 +137,7 @@ const projects = [
     id: 10,
   },
 
+  
 
 ];
 

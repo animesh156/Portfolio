@@ -1,4 +1,4 @@
-import animesh_resume from "/assets/animesh_resume.pdf";
+
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import bgr from "/assets/homeBg.gif";
@@ -41,16 +41,27 @@ function Home() {
             />
           </div>
 
+
+
           <div style={{ color: textColor }}>
-            <button
-              type="button"
-              className="mt-7 m-auto ease-in duration-300 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2"
-            >
-              <a href={animesh_resume} download="">
-                Resume
-              </a>
-            </button>
-          </div>
+  <a
+    href="https://drive.google.com/file/d/1lbTrovcs3oFh_H1R9CZHa_kzWdPYE4bz/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    download=""
+  >
+    <button
+      type="button"
+      className="mt-7 m-auto ease-in duration-300 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2"
+    >
+      Resume
+    </button>
+  </a>
+</div>
+
+
+
+
         </div>
 
         <div className="mt-2">
