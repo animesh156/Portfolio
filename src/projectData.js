@@ -72,6 +72,18 @@ const projects = [
 
 
   {
+    title: "E-Commerce App",
+    cover: "shopping.png",
+    desc: "App that allows user to browse products, view product details, add items to cart, and proceed through a mock checkout and payment process.",
+    live: "https://shopping-app-five-iota.vercel.app/",
+    code: "https://github.com/animesh156/Shopping-App",
+    type: "FullStack",
+    id: 12,
+  },
+
+
+
+  {
     title: "Weather Monitoring ",
     cover: "weatherMonitoring.png",
     desc: "Weather App that provides real-time weather data, alerts for temperature thresholds, and daily weather summaries for various cities.",
