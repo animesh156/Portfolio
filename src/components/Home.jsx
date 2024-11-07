@@ -45,7 +45,7 @@ function Home() {
 
           <div style={{ color: textColor }}>
   <a
-    href="https://drive.google.com/file/d/1UGq4CjoeMZWs2EfUuXwjx8TFbE1gP97o/view?usp=sharing"
+    href="https://drive.google.com/file/d/1vH32fkpmiNPwlDcOS2mVXJkilK8aNgq5/view?usp=drivesdk"
     target="_blank"
     rel="noopener noreferrer"
     download=""
