@@ -3,6 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import bgr from "/assets/homeBg.gif";
 import hand from '/assets/hand.gif'
+import Snowfall from 'react-snowfall'
+
 
 function Home() {
   const [textColor, setTextColor] = useState("red");
@@ -67,6 +69,18 @@ function Home() {
         <div className="mt-2">
           <img src={bgr} className="h-60 text-black rounded-3xl border-black"  alt="" />
         </div>
+
+        <Snowfall
+         color='#2196f3'
+  style={{
+    position: 'fixed',
+    width: '100vw',
+    height: '100vh',
+    
+  }}
+/>
+
+        
       </section>
     </>
   );

@@ -1,7 +1,6 @@
 
-
 import { useState } from 'react'
-
+import Snowfall from 'react-snowfall'
 import projects from '../projectData'
 
 
@@ -84,7 +83,15 @@ function Project() {
 
 </div>
 
-
+<Snowfall
+         color='#ffeb3b'
+  style={{
+    position: 'fixed',
+    width: '100vw',
+    height: '100vh',
+    
+  }}
+/>
 
 
   </section>

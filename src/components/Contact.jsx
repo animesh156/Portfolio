@@ -3,6 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
+import Snowfall from 'react-snowfall'
 
 function Contact() {
   return (
@@ -50,6 +51,16 @@ function Contact() {
           © 2024 Animesh, Inc. All rights reserved.
         </p>
       </div>
+      
+      <Snowfall
+         color='#e91e63'
+  style={{
+    position: 'fixed',
+    width: '100vw',
+    height: '100vh',
+    
+  }}
+/>
     </div>
   );
 }
