@@ -72,6 +72,17 @@ const projects = [
 
 
   {
+    title: "Expensy",
+    cover: "expensy.png",
+    desc: "Expense Tracker app, enabling users to efficiently manage and track their finances, with JWT authenciation for user security",
+    live: "https://expensy-navy.vercel.app/",
+    code: "https://github.com/animesh156/Expensy",
+    type: "FullStack",
+    id: 13,
+  },
+
+
+  {
     title: "E-Commerce App",
     cover: "shopping.png",
     desc: "App that allows user to browse products, view product details, add items to cart, and proceed through a mock checkout and payment process.",
