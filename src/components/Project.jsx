@@ -42,7 +42,7 @@ function Project() {
       </div>
     </div>
 
-   <div className='flex flex-row flex-wrap'>
+   <div className='flex flex-row flex-wrap '>
 
    
   
