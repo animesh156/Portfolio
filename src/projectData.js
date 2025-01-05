@@ -72,6 +72,17 @@ const projects = [
 
 
   {
+    title: "Chat App",
+    cover: "chat-app.png",
+    desc: "Chat app, designed to provide a seamless and efficient communication experience with  clean and intuitive user interface",
+    live: "https://chatpy-kkfy.onrender.com",
+    code: "https://github.com/animesh156/chat-web-app",
+    type: "FullStack",
+    id: 14,
+  },
+
+
+  {
     title: "Expensy",
     cover: "expensy.png",
     desc: "Expense Tracker app, enabling users to efficiently manage and track their finances, with JWT authenciation for user security",
@@ -126,15 +137,7 @@ const projects = [
   },
 
    
-  {
-    title: "Rule Engine App",
-    cover: "ruleEngine.png",
-    desc: "MERN stack based Rule Engine app allows users to dynamically create, combine, and evaluate rules using AST behind",
-    live: "https://rule-engine-livid.vercel.app/",
-    code: "https://github.com/animesh156/rule-engine",
-    type: "FullStack",
-    id: 12,
-  },
+
 
 
 
