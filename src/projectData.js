@@ -94,6 +94,17 @@ const projects = [
 
 
   {
+    title: "Quiz App",
+    cover: "quizApp.png",
+    desc: "MERN (MongoDB, Express, React, Node.js) stack-based quiz application that allows users to take quizzes, view scores, and track their progress.",
+    live: "https://quiz-app-frontend-blush.vercel.app/",
+    code: "https://github.com/animesh156/quiz-app",
+    type: "FullStack",
+    id: 8,
+  },
+
+
+  {
     title: "E-Commerce App",
     cover: "shopping.png",
     desc: "App that allows user to browse products, view product details, add items to cart, and proceed through a mock checkout and payment process.",
@@ -101,6 +112,17 @@ const projects = [
     code: "https://github.com/animesh156/Shopping-App",
     type: "FullStack",
     id: 12,
+  },
+
+
+  {
+    title: "Food Website",
+    cover: "food.png",
+    desc: "MERN  stack-based food ordering application where users can browse through a food menu, add items to their cart, and place orders. ",
+    live: "https://food-app-frontend-zeta.vercel.app/",
+    code: "https://github.com/animesh156/food-app",
+    type: "FullStack",
+    id: 7,
   },
 
 
@@ -116,25 +138,8 @@ const projects = [
   },
 
 
-  {
-    title: " Food Website",
-    cover: "food.png",
-    desc: "MERN  stack-based food ordering application where users can browse through a food menu, add items to their cart, and place orders. ",
-    live: "https://food-app-frontend-zeta.vercel.app/",
-    code: "https://github.com/animesh156/food-app",
-    type: "FullStack",
-    id: 7,
-  },
-
-  {
-    title: "Quiz App",
-    cover: "quizApp.png",
-    desc: "MERN (MongoDB, Express, React, Node.js) stack-based quiz application that allows users to take quizzes, view scores, and track their progress.",
-    live: "https://quiz-app-frontend-blush.vercel.app/login",
-    code: "https://github.com/animesh156/quiz-app",
-    type: "FullStack",
-    id: 8,
-  },
+ 
+ 
 
    
 
