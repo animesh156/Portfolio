@@ -72,9 +72,21 @@ const projects = [
 
 
   {
+    title: "MindWell",
+    cover: "mind.png",
+    desc: "Web app that helps users improve their mental health through meditation, mindfulness exercises, emotional support, and self-assessment tools",
+    live: "https://mental-wellness-iota.vercel.app/",
+    code: "https://github.com/animesh156/mental-wellness-app",
+    type: "FullStack",
+    id: 15,
+  },
+
+
+
+  {
     title: "Chat App",
     cover: "chat-app.png",
-    desc: "Chat app, designed to provide a seamless and efficient communication experience with  clean and intuitive user interface",
+    desc: " a real-time chat application built using the MERN stack. The application allows users to send and receive messages instantly, with real-time updates",
     live: "https://chatpy-kkfy.onrender.com",
     code: "https://github.com/animesh156/chat-web-app",
     type: "FullStack",
@@ -85,7 +97,7 @@ const projects = [
   {
     title: "Expensy",
     cover: "expensy.png",
-    desc: "Expense Tracker app, enabling users to efficiently manage and track their finances, with JWT authenciation for user security",
+    desc: "It helps users manage their finances by tracking income and expenses,visualizing data with charts, and categorizing transactions for better financial insights.",
     live: "https://expensy-navy.vercel.app/",
     code: "https://github.com/animesh156/Expensy",
     type: "FullStack",
