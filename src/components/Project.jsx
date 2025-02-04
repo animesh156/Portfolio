@@ -96,7 +96,7 @@ function Project() {
               filteredProjects.map((project) => (
                 <motion.div
                   key={project.id}
-                  className="w-52 md:w-72  flex-wrap hover:scale-105 mt-5 hover:shadow-md hover:shadow-cyan-400 m-auto mb-4 border rounded-lg shadow bg-neutral-950 border-cyan-400"
+                  className="w-52 md:w-72  flex-wrap hover:scale-105 mt-5 hover:shadow-md hover:shadow-cyan-400 m-auto mb-4 border rounded-lg shadow bg-neutral-900 border-cyan-400"
                   variants={itemVariants}
                 >
                   <a href="#">
@@ -108,11 +108,11 @@ function Project() {
                   </a>
                   <div className="p-5">
                     <a href="#">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-red-500">
+                      <h5 className="mb-2 md:text-2xl font-bold tracking-tight text-sky-600">
                         {project.title}
                       </h5>
                     </a>
-                    <p className="mb-3 font-normal text-sm text-white text-wrap">{project.desc}</p>
+                    <p className="mb-3 font-normal md:text-base text-xs text-white text-wrap">{project.desc}</p>
                     <a
                       href={project.live}
                       target="_blank"

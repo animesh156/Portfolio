@@ -6,6 +6,8 @@ import { FaDiscord } from "react-icons/fa6";
 import Snowfall from 'react-snowfall'
 
 function Contact() {
+  
+
   return (
     <div>
       <h1 className="text-rose-500 text-center text-4xl md:text-6xl font-bold mt-5 py-4 mb-12">
@@ -48,7 +50,7 @@ function Contact() {
           />
         </div>
         <p className="mt-16 mb-2 text-base font-bold leading-6 text-center text-emerald-400">
-          © 2024 Animesh, Inc. All rights reserved.
+          © {new Date().getFullYear()} Animesh, Inc. All rights reserved.
         </p>
       </div>
       

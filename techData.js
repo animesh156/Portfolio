@@ -13,7 +13,7 @@ const techData = [
     { src: "https://img.icons8.com/nolan/64/git.png", label: "Git" },
     { src: "https://img.icons8.com/color/48/c-programming.png", label: "C" },
     { src: "https://img.icons8.com/nolan/64/github.png", label: "Github" },
-    { src: "https://img.icons8.com/external-soft-fill-juicy-fish/60/external-saas-bugs-and-errors-soft-fill-soft-fill-juicy-fish.png", label: "SaaS" },
+    { src: "https://img.icons8.com/?size=100&id=b6vIINYN0kfW&format=png&color=000000", label: "Redux" },
     { src: "./assets/vite.svg", label: "Vite" },
   ]
 

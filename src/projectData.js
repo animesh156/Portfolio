@@ -72,6 +72,17 @@ const projects = [
 
 
   {
+    title: "Sustainable Fishing",
+    cover: 'fishing.png',
+    desc: "Platform to educate users about sustainable fishing practices, raise awareness about the dangers of overfishing, and provide tools to promote healthier oceans",
+    live: "https://sustainable-fishing.vercel.app/",
+    code: "https://github.com/animesh156/Sustainable-Fishing-Practices-App",
+    type: "FullStack",
+    id: 9,
+  },
+
+
+  {
     title: "MindWell",
     cover: "mind.png",
     desc: "Web app that helps users improve their mental health through meditation, mindfulness exercises, emotional support, and self-assessment tools",
@@ -86,7 +97,7 @@ const projects = [
   {
     title: "Chat App",
     cover: "chat-app.png",
-    desc: " a real-time chat application built using the MERN stack. The application allows users to send and receive messages instantly, with real-time updates",
+    desc: "A real-time chat application built using the MERN stack. The application allows users to send and receive messages instantly, with real-time updates",
     live: "https://chatpy-kkfy.onrender.com",
     code: "https://github.com/animesh156/chat-web-app",
     type: "FullStack",
@@ -149,36 +160,6 @@ const projects = [
     id: 11,
   },
 
-
- 
- 
-
-   
-
-
-
-
-
-  {
-    title: "Goal Setter",
-    cover: 'goalSetter.png',
-    desc: "MERN (MongoDB, Express, React, Node.js) stack-based quiz application that allows users to take quizzes, view scores, and track their progress.",
-    live: "https://goal-setter-frontend-sable.vercel.app/",
-    code: "https://github.com/animesh156/GoalSetterApp",
-    type: "FullStack",
-    id: 9,
-  },
-
-
-  {
-    title: "Book Store",
-    cover: "book-store.png",
-    desc: "MERN (MongoDB, Express, React, Node.js) stack-based bookstore application that allows users to browse, search, and purchase books",
-    live: "https://book-store-rho-seven.vercel.app/",
-    code: "https://github.com/animesh156/Book-Store",
-    type: "FullStack",
-    id: 10,
-  },
 
   
 
