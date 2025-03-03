@@ -1,97 +1,24 @@
-
-
-.card {
-  margin-top: 15px;
- 
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
 }
 
 
 
-a:focus {
-  color: orangered;
-}
-
-h2 {
-  font-family: Kalam;
-}
-
-#about {
-  margin-top: 25px;
-  height: auto;
-}
-
-.abt {
-  width: auto;
-  word-break: break-word;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-.cont {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  height: auto;
-
-
-}
-
-.tech {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: row;
-  margin: auto;
-  flex-wrap: wrap;
-
-  align-content: space-around;
-}
-
-.div2 {
-  word-wrap: break-word;
-}
 
 
 
-#project {
-  font-family: "Acme";
-  height: auto;
-  width: auto;
-}
 
-.project-div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
- 
-  justify-content: space-evenly;
-}
-
-
-h2 {
-  font-family: Honk;
-}
-
-html {
-  scroll-padding-top: 4rem;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: auto;
-  text-align: center;
-  padding: 100px 0;
-  height: 300px;
-}
 
 #tab-container {
   margin-top: 20px;
   margin-bottom: 20px;
   .tab-content {
-   
     padding: 20px 0 0;
   }
   input {
@@ -103,51 +30,27 @@ html {
       }
     }
   }
-  label {
-    display: inline-block;
-    padding: 0 25px;
-    font-weight: 600;
-    &:not(:first-of-type) {
-      border-left: 2px solid #991a48;
-      @media screen and (max-width: 480px) {
-        border-left: 2px solid #991a48;
-      }
-    }
+}
+label {
+  display: inline-block;
+  padding: 0 25px;
+  font-weight: 600;
+  &:not(:first-of-type) {
+    border-left: 2px solid #991a48;
     @media screen and (max-width: 480px) {
-      display: inline-block;
-    }
-    &:hover {
-      color: #bd235d;
-      cursor: pointer;
+      border-left: 2px solid #991a48;
     }
   }
-
-  .card-body {
-    width: 100%;
-    background: #fff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-      0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    .card-title {
-      padding-top: 20px;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .card-description {
-      padding-bottom: 20px;
-    }
-    .card-link {
-      padding-bottom: 20px;
-      text-transform: uppercase;
-      color: #bd235d;
-      display: block;
-    }
+  @media screen and (max-width: 480px) {
+    display: inline-block;
+  }
+  &:hover {
+    color: #bd235d;
+    cursor: pointer;
   }
 }
 
-
 .navbar {
- 
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +67,6 @@ html {
   width: 100%;
   height: 80px;
   max-width: 1500px;
-
 }
 
 .nav-logo {
@@ -195,7 +97,6 @@ html {
 }
 
 .nav-links {
- 
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
@@ -230,7 +131,6 @@ html {
 
 .nav-item .active {
   color: #ffdd40;
- 
 }
 
 .nav-icon {
@@ -240,7 +140,6 @@ html {
 
 .nav-icon .icon {
   display: inline-block;
-
 }
 .tst {
   font-family: "Poppins";
@@ -275,7 +174,6 @@ html {
     width: 100%;
     display: table;
   }
-
 
   .nav-icon {
     display: block;

@@ -5,16 +5,16 @@ import hand from "/assets/hand.gif";
 import Snowfall from "react-snowfall";
 
 function Home() {
-  const [textColor, setTextColor] = useState("red");
+  const [textColor, setTextColor] = useState("violet");
 
   return (
     
       <section
-        className="w-auto flex-col flex justify-center md:flex-row h-screen items-center md:justify-evenly "
+        className="w-auto flex-col  flex justify-center md:flex-row h-screen items-center md:justify-around "
       >
         {/* Left Side Content */}
         <div className="flex flex-col justify-center text-center px-4">
-          <div className="text-2xl md:text-6xl mb-10 text-white">
+          <div className="lg:text-6xl text-2xl mb-10 text-white">
             <h1 style={{ display: "inline" }}>
               Hi There!{" "}
               <img
@@ -32,7 +32,7 @@ function Home() {
             </h1>
           </div>
 
-          <div style={{ color: textColor }} className="text-wrap text-2xl">
+          <div style={{ color: textColor }} className="text-wrap md:text-2xl text-lg">
             <TypeAnimation
               sequence={[
                 "MERN Stack Developer",
@@ -54,7 +54,7 @@ function Home() {
 
           <div style={{ color: textColor }}>
             <a
-              href="https://drive.google.com/file/d/1KpfUnu6yjl48nQW_S1B19etxPOirqc49/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DS5sJvea_B1BthYp7VFE9muDhvCkeQvE/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               download=""
@@ -70,7 +70,7 @@ function Home() {
         </div>
 
         {/* Right Side Content */}
-        <div className="mt-6 md:mt-0">
+        <div className="mt-6  md:mt-0">
           <img
             src={bgr}
             className="h-60 text-black rounded-3xl border-black"

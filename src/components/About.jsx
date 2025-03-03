@@ -27,11 +27,11 @@ function About() {
           {...animationSettings}
           transition={{ ...animationSettings.transition, delay: 0.2 }} // Add delay for staggered effect
         >
-          <p className="abt text-sm md:text-2xl text-wrap font-bold">
+          <p className="abt text-sm lg:text-2xl md:text-lg text-wrap font-bold">
           Hey there! 👋 I’m Animesh Rathore, a passionate and dedicated final-year Computer Science Engineering (CSE) student. My journey in tech revolves around continuous learning, problem-solving, and creating impactful solutions with the MERN stack. I thrive on crafting clean, efficient, and scalable code that aligns with industry best practices</p>
 
           <br></br>
-<p className='abt text-sm md:text-2xl text-wrap font-bold'>
+<p className='abt text-sm lg:text-2xl md:text-lg text-wrap font-bold'>
 With a strong foundation in programming and a deep love for development, I’ve honed my skills in technologies like React JS, Node.js, MongoDB, and Express.js. Whether it&apos;s front-end design, back-end logic, or full-stack solutions, I enjoy building projects that solve real-world challenges.
           </p>
         </motion.div>
@@ -46,11 +46,11 @@ With a strong foundation in programming and a deep love for development, I’ve 
         </motion.h2>
 
         {/* Animated tech stack cards */}
-        <div className="flex flex-row justify-center gap-8 flex-wrap text-green-500 mt-6 stack py-9">
+        <div className="flex flex-row justify-center  gap-8 flex-wrap text-sky-600 mt-6 stack py-9">
           {techData.map((tech, index) => (
             <motion.div
               key={tech.label}
-              className="flex flex-col border-2 border-slate-500 shadow-md hover:shadow-pink-500 h-32 rounded-lg items-center w-32 justify-center"
+              className="flex flex-col border-2 border-green-600 h-32 rounded-lg items-center w-32 justify-center"
               {...animationSettings}
               transition={{
                 ...animationSettings.transition,

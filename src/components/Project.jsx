@@ -48,7 +48,7 @@ function Project() {
           exit="hidden"
           transition={{ type: 'spring', stiffness: 50, damping: 20 }}
         >
-          <h2 className="text-5xl font-bold text-sky-400 text-center mt-3">
+          <h2 className="md:text-5xl text-xl font-bold text-cyan-800 text-center mt-3">
             My Latest Projects
           </h2>
 
@@ -65,7 +65,7 @@ function Project() {
                 />
                 <label
                   htmlFor="tab1"
-                  className={`text-2xl ${showFrontend ? 'text-red-500' : 'text-white'}`} // Apply active class
+                  className={`md:text-2xl ${showFrontend ? 'text-red-500' : 'text-white'}`} // Apply active class
                 >
                   Frontend
                 </label>
@@ -78,7 +78,7 @@ function Project() {
                 />
                 <label
                   htmlFor="tab2"
-                  className={`text-2xl ${!showFrontend ? 'text-red-500' : 'text-white'}`} // Apply active class
+                  className={`md:text-2xl ${!showFrontend ? 'text-red-500' : 'text-white'}`} // Apply active class
                 >
                   Full Stack
                 </label>
@@ -88,7 +88,7 @@ function Project() {
 
           {/* Cards Animation */}
           <motion.div
-            className="flex flex-row flex-wrap"
+            className="flex flex-row justify-evenly gap-x-3 gap-y-3 flex-wrap"
             key={showFrontend ? 'frontend' : 'fullstack'} // Ensures re-animation on tab switch
             variants={containerVariants}
           >
@@ -96,27 +96,27 @@ function Project() {
               filteredProjects.map((project) => (
                 <motion.div
                   key={project.id}
-                  className="w-52 md:w-72  flex-wrap hover:scale-105 mt-5 hover:shadow-md hover:shadow-cyan-400 m-auto mb-4 border rounded-lg shadow bg-neutral-900 border-cyan-400"
+                  className="md:w-80 w-64 bg-neutral-900 mb-2 border rounded-lg overflow-hidden"
                   variants={itemVariants}
                 >
-                  <a href="#">
-                    <img
-                      className="rounded-t-lg"
-                      src={`/assets/${project.cover}`}
-                      alt={project.title}
-                    />
-                  </a>
+                
+                <img
+    className="rounded-t-lg w-full brightness-50"
+    src={project.cover}
+    alt={project.title}
+  />
+                
                   <div className="p-5">
-                    <a href="#">
-                      <h5 className="mb-2 md:text-2xl font-bold tracking-tight text-sky-600">
+                    
+                      <h1 className="mb-2 text-sky-900 lg:text-xl font-bold  ">
                         {project.title}
-                      </h5>
-                    </a>
-                    <p className="mb-3 font-normal md:text-base text-xs text-white text-wrap">{project.desc}</p>
+                      </h1>
+                    
+                    <p className="mb-3 font-normal lg:text-sm text-xs text-gray-400 text-wrap">{project.desc}</p>
                     <a
                       href={project.live}
                       target="_blank"
-                      className="inline-flex mr-4 items-center text-black bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                      className="inline-flex mr-4 items-center text-black bg-sky-900 hover:bg-sky-950 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                       rel="noreferrer"
                     >
                       Live
@@ -124,7 +124,7 @@ function Project() {
                     <a
                       href={project.code}
                       target="_blank"
-                      className="inline-flex items-center dark:text-black font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                      className="inline-flex mr-4 items-center text-black bg-sky-900 hover:bg-sky-950 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                       rel="noreferrer"
                     >
                       Code

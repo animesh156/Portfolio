@@ -11,7 +11,7 @@ function Header() {
   return (
     <>
 
-<nav className="navbar  bg-zinc-800 text-orange-500 h-12" >
+<nav className="navbar bg-base-200  text-orange-500 h-12" >
         <div className="nav-container ">
         
  

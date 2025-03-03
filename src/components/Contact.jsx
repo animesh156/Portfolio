@@ -53,7 +53,7 @@ function Contact() {
           © {new Date().getFullYear()} Animesh, Inc. All rights reserved.
         </p>
       </div>
-      
+     
       <Snowfall
          color='#e91e63'
   style={{
