@@ -1,21 +1,19 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Snowfall from 'react-snowfall';
+// import Snowfall from 'react-snowfall';
 import projects from '../projectData';
 
 function Project() {
   const [showFrontend, setShowFrontend] = useState(true);
   const [filteredProjects, setFilteredProjects] = useState([]);
 
-  // Filter projects based on the selected tab (Frontend or Full Stack)
   useEffect(() => {
     const newFilteredProjects = projects.filter((val) =>
       showFrontend ? val.type === 'Frontend' : val.type === 'FullStack'
     );
     setFilteredProjects(newFilteredProjects);
-  }, [showFrontend]); // Re-filter projects only when showFrontend changes
+  }, [showFrontend]);
 
-  // Animation Variants for the container (Staggered)
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -31,7 +29,6 @@ function Project() {
     },
   };
 
-  // Animation for each card item
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 4, transition: { duration: 0.5 } },
@@ -39,113 +36,100 @@ function Project() {
 
   return (
     <>
-      <section id="project" className="scroll-smooth h-screen mt-5">
+      <section id="project" className="scroll-smooth min-h-screen  p-5">
         <motion.div
-          key={showFrontend ? 'frontend' : 'fullstack'} // Key ensures animation triggers on tab change
+          key={showFrontend ? 'frontend' : 'fullstack'}
           variants={containerVariants}
           initial="hidden"
           animate="visible"
           exit="hidden"
           transition={{ type: 'spring', stiffness: 50, damping: 20 }}
         >
-          <h2 className="md:text-5xl text-xl font-bold text-cyan-800 text-center mt-3">
+          <h2 className="md:text-5xl text-2xl font-bold text-sky-900 dark:text-cyan-400 text-center ">
             My Latest Projects
           </h2>
 
-          {/* Tabs with Active State Styling */}
-          <div id="tab-container" className="tab-container">
-            <div className="container-fluid">
-              <div className="text-center col-md-10 col-md-offset-1">
-                <input
-                  id="tab1"
-                  type="radio"
-                  name="tabs"
-                  checked={showFrontend} // Make sure the state is reflected in the input
-                  onChange={() => setShowFrontend(true)} // Update state when Frontend tab is clicked
-                />
-                <label
-                  htmlFor="tab1"
-                  className={`md:text-2xl ${showFrontend ? 'text-red-500' : 'text-white'}`} // Apply active class
-                >
-                  Frontend
-                </label>
-                <input
-                  id="tab2"
-                  type="radio"
-                  name="tabs"
-                  checked={!showFrontend} // Make sure the state is reflected in the input
-                  onChange={() => setShowFrontend(false)} // Update state when Full Stack tab is clicked
-                />
-                <label
-                  htmlFor="tab2"
-                  className={`md:text-2xl ${!showFrontend ? 'text-red-500' : 'text-white'}`} // Apply active class
-                >
-                  Full Stack
-                </label>
-              </div>
-            </div>
+          {/* Tabs */}
+          <div className="flex justify-center gap-5 mt-5 mb-2">
+          <button
+  onClick={() => setShowFrontend(true)}
+  className={`px-6 py-2 font-semibold rounded-md transition-all ${
+    showFrontend
+      ? 'bg-red-500 text-white shadow-lg ' 
+      : 'bg-yellow-300 text-gray-900 shadow-lg'
+  }`}
+>
+  Frontend
+</button>
+<button
+  onClick={() => setShowFrontend(false)}
+  className={`px-6 py-2 font-semibold rounded-md transition-all ${
+    !showFrontend
+      ? 'bg-red-500 text-white shadow-lg'
+      : 'bg-yellow-300 text-gray-900 shadow-lg'
+  }`}
+>
+  Full Stack
+</button>
+
           </div>
 
-          {/* Cards Animation */}
+          {/* Cards Section */}
           <motion.div
-            className="flex flex-row justify-evenly gap-x-3 gap-y-3 flex-wrap"
-            key={showFrontend ? 'frontend' : 'fullstack'} // Ensures re-animation on tab switch
+            className="flex flex-wrap justify-center gap-6 mt-8"
+            key={showFrontend ? 'frontend' : 'fullstack'}
             variants={containerVariants}
           >
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project) => (
                 <motion.div
-                  key={project.id}
-                  className="md:w-80 w-64 bg-neutral-900 mb-2 border rounded-lg overflow-hidden"
-                  variants={itemVariants}
-                >
-                
-                <img
-    className="rounded-t-lg w-full brightness-50"
-    src={project.cover}
-    alt={project.title}
-  />
-                
-                  <div className="p-5">
-                    
-                      <h1 className="mb-2 text-sky-900 lg:text-xl font-bold  ">
-                        {project.title}
-                      </h1>
-                    
-                    <p className="mb-3 font-normal lg:text-sm text-xs text-gray-400 text-wrap">{project.desc}</p>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      className="inline-flex mr-4 items-center text-black bg-sky-900 hover:bg-sky-950 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                      rel="noreferrer"
-                    >
-                      Live
-                    </a>
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      className="inline-flex mr-4 items-center text-black bg-sky-900 hover:bg-sky-950 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                      rel="noreferrer"
-                    >
-                      Code
-                    </a>
+                key={project.id}
+                className="w-80 bg-slate-50 dark:bg-neutral-900 shadow-lg rounded-xl overflow-hidden"
+                variants={itemVariants}
+                whileHover={{ scale: 1.12 }} 
+                transition={{ type: "spring", stiffness: 200, damping: 10 }}
+              >
+              
+                  <img className="rounded-t-xl w-full brightness-75" src={project.cover} alt={project.title} />
+                  <div className="p-6 ">
+                    <h1 className="mb-2 text-lg font-bold text-sky-500">{project.title}</h1>
+                    <p className="mb-3 text-sm  ">{project.desc}</p>
+                    <div className="flex gap-3">
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        className="inline-flex items-center text-white bg-sky-900 hover:bg-sky-950 font-bold rounded-lg text-sm px-5 py-2.5"
+                        rel="noreferrer"
+                      >
+                        Live
+                      </a>
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        className="inline-flex items-center text-white bg-gray-700 hover:bg-gray-900 font-bold rounded-lg text-sm px-5 py-2.5"
+                        rel="noreferrer"
+                      >
+                        Code
+                      </a>
+                    </div>
                   </div>
                 </motion.div>
               ))
             ) : (
-              <p className="text-center text-white">No projects available.</p>
+              <p className="text-center text-gray-700 dark:text-white">No projects available.</p>
             )}
           </motion.div>
         </motion.div>
 
+        {/* Snowfall Effect
         <Snowfall
-          color="#ffeb3b"
+          color={window.matchMedia('(prefers-color-scheme: dark)').matches ? '#ffeb3b' : '#c9c9c9'}
           style={{
             position: 'fixed',
             width: '100vw',
             height: '100vh',
           }}
-        />
+        /> */}
       </section>
     </>
   );

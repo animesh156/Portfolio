@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import bgr from "/assets/homeBg.gif";
 import hand from "/assets/hand.gif";
-import Snowfall from "react-snowfall";
+// import Snowfall from "react-snowfall";
 
 function Home() {
   const [textColor, setTextColor] = useState("violet");
@@ -14,7 +14,7 @@ function Home() {
       >
         {/* Left Side Content */}
         <div className="flex flex-col justify-center text-center px-4">
-          <div className="lg:text-6xl text-2xl mb-10 text-white">
+          <div className="lg:text-6xl text-2xl mb-10 dark:text-white">
             <h1 style={{ display: "inline" }}>
               Hi There!{" "}
               <img
@@ -52,7 +52,7 @@ function Home() {
             />
           </div>
 
-          <div style={{ color: textColor }}>
+          <div >
             <a
               href="https://drive.google.com/file/d/1DS5sJvea_B1BthYp7VFE9muDhvCkeQvE/view?usp=sharing"
               target="_blank"
@@ -60,8 +60,8 @@ function Home() {
               download=""
             >
               <button
-                type="button"
-                className="mt-7 m-auto ease-in duration-300 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2"
+               
+                className="mt-7 m-auto   bg-green-500 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2"
               >
                 Resume
               </button>
@@ -78,15 +78,6 @@ function Home() {
           />
         </div>
 
-        {/* Snowfall Effect */}
-        <Snowfall
-          color="#2196f3"
-          style={{
-            position: "fixed",
-            width: "100vw",
-            height: "100vh",
-          }}
-        />
       </section>
    
   );

@@ -20,7 +20,7 @@ function Header() {
               <NavLink
                 exact
                 to="/"
-                activeClassName="active"
+                activeClassName="active" 
                 className="nav-links"
                 onClick={handleClick}
               >

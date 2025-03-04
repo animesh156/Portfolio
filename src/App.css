@@ -1,60 +1,12 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: light --default, dark --prefersdark;
-  root: ":root";
-  include: ;
-  exclude: ;
-  prefix: ;
-  logs: true;
-}
+@plugin "daisyui";
 
-
-
-
-
-
-
-
-#tab-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  .tab-content {
-    padding: 20px 0 0;
-  }
-  input {
-    display: none;
-
-    &:checked {
-      & + label {
-        color: #bd235d;
-      }
-    }
-  }
-}
-label {
-  display: inline-block;
-  padding: 0 25px;
-  font-weight: 600;
-  &:not(:first-of-type) {
-    border-left: 2px solid #991a48;
-    @media screen and (max-width: 480px) {
-      border-left: 2px solid #991a48;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    display: inline-block;
-  }
-  &:hover {
-    color: #bd235d;
-    cursor: pointer;
-  }
-}
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 20;

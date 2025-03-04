@@ -3,7 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
-import Snowfall from 'react-snowfall'
+// import Snowfall from 'react-snowfall'
 
 function Contact() {
   
@@ -15,7 +15,7 @@ function Contact() {
         </h1>
       <div className="max-w-screen-xl px-4 m-auto overflow-hidden sm:px-6 lg:px-8">
       
-        <div className="flex justify-center mt-12 space-x-6 mb-10">
+        <div className="flex justify-center mt-12 space-x-4 mb-10">
           <a href="https://github.com/animesh156" target="_blank" className="">
             <FaGithub className="text-fuchsia-500" size={24} />
           </a>
@@ -31,7 +31,7 @@ function Contact() {
             target="_blank"
             className=""
           >
-            <FaXTwitter size={24} className="text-white" />
+            <FaXTwitter size={24} className="dark:text-white" />
           </a>
           <a
             href="https://discordapp.com/users/anni215405"
@@ -54,7 +54,7 @@ function Contact() {
         </p>
       </div>
      
-      <Snowfall
+      {/* <Snowfall
          color='#e91e63'
   style={{
     position: 'fixed',
@@ -62,7 +62,8 @@ function Contact() {
     height: '100vh',
     
   }}
-/>
+/> */}
+
     </div>
   );
 }

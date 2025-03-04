@@ -12,7 +12,7 @@ function About() {
 
   return (
     <>
-      <section id="about" className="scroll-smooth text-white px-6">
+      <section id="about" className="scroll-smooth dark:text-white px-6">
         {/* Animated "About Me" heading */}
         <motion.h2
           className="text-pink-400 text-5xl mt-6 py-5 mb-3 font-bold text-center"
