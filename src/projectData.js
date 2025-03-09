@@ -188,15 +188,15 @@ const projects = [
 
 
 
-  // {
-  //   title: "Weather Monitoring ",
-  //   cover: "weatherMonitoring.png",
-  //   desc: "Weather App that provides real-time weather data, alerts for temperature thresholds, and daily weather summaries for various cities.",
-  //   live: "https://weather-monitoring-app-flax.vercel.app/",
-  //   code: "https://github.com/animesh156/weather-monitoring-app",
-  //   type: "FullStack",
-  //   id: 11,
-  // },
+  {
+    title: "Dice Game",
+    cover: "https://res.cloudinary.com/dmdlgpurh/image/upload/v1741523785/Screenshot_294_xpkvbe.png",
+    desc: "A simple provably fair dice game built with React (Vite) for the frontend and Node.js (Express) with MongoDB for the backend.",
+    live: "https://dice-game-gold-tau.vercel.app/",
+    code: "https://github.com/animesh156/dice-game",
+    type: "FullStack",
+    id: 11,
+  },
 
 
   
